@@ -1,34 +1,5 @@
 
 
-
-'''l=[1,2,5,20,20,50,100,200,500,2000]
-l2=[1,2,5,20,20,50,100,200,500,2000]
-l1=[0]*len(l)
-def change(a,l,l1,l2):
-    if a==0:
-        return l1
-    d=l.pop()
-    l.append(d)
-    if (a-d)>=0:
-        l1[l2.index(d)]+=a//d
-    
-    l.pop()
-    return change(a%d,l,l1,l2)
-print(change(4556,l,l1,l2))'''
-'''#######################################################
-x=int(input("Enter Cost of your order"))
-y=int(input("Enter amount you provided "))
-a=y-x
-if a==0:
-    print('NO CHANGE IS REQUIRED')
-elif a<0:
-    print('you need to give her more money')
-else:
-    for i in changes(4888,d,d1):
-   
-    print(f'NUMBER OF NOTES/COINS OF {i} : {d[i]}')
-    print()'''
-
 #################################################################################################################################################
 def changes(a,denomination,demo_denomination):
     if a==0 or len(demo_denomination)==0:
